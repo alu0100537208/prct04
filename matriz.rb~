@@ -33,16 +33,39 @@ def read_matrices(fn)
   [a, b]
 end
 
+
+
 a, b = read_matrices('datos.txt')
 
-puts a
+a, b = read_matrices('datos.txt')
 
+puts "Elementos de a " 
+puts a
+puts "Elementos de b " 
 puts b
 
+puts " "
 
+puts "Matriz A tiene  "
+puts a.length
+puts "filas y  "
+puts a[0].length
+puts " columnas"
 
+puts " "
+puts "Matriz B tiene  "
+puts b.length
+puts "filas y  "
+puts b[0].length
+puts " columnas"
 
+if a.length == b.length
+  if a[0].length == b[0].length
+    c = a[0]+b[0]
+    puts c
+  end
 
-
-
+else
+  puts " No se puede realizar suma !"
+end  
 
